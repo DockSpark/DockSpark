@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build output and caches
+build/
+dist/
+out/
+.cache/
+DerivedData/
+
+# Logs
+*.log
+logs/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Package manager and test artifacts
+node_modules/
+coverage/
+
+# This repository only contains public release materials
+src/    
+Source/
+Sources/
+App/
+Apps/
+Tests/
+test/
+tests/
+*.xcodeproj/
+*.xcworkspace/
+*.swift
+*.m
+*.mm
+*.h
+*.c
+*.cc
+*.cpp
+*.cs
+*.kt
+*.java
+*.dart
+*.js
+*.ts
+*.tsx
+*.jsx
+*.py
+*.rb
+*.go
+*.rs
