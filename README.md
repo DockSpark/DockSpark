@@ -1,6 +1,98 @@
 # DockSpark
-A Dock app for instant app profile switching.
+
+DockSpark lets you switch browser profiles directly from the macOS Dock. Hover
+over a supported browser icon, then choose the profile you want without opening
+the browser's profile menu.
+
+[Download the latest release](https://github.com/DockSpark/DockSpark/releases/latest)
+· [Website](https://dockspark.app)
+· [Changelog](CHANGELOG.md)
+· [Report an issue](https://github.com/DockSpark/DockSpark/issues)
+
+## Features
+
+- Switch profiles from a popover attached to the browser's Dock icon
+- Manage browser profiles from a native macOS app
+- Use custom names and colors to identify profiles quickly
+- Check for updates in the app
+- Use the app in English or Simplified Chinese
+
+## Requirements
+
+- macOS 14.0 or later
+- Apple silicon or Intel Mac
+- A supported browser kept in the Dock
+
+### Supported browsers
+
+| Browser | Dock profile switching |
+| --- | --- |
+| Safari | Supported |
+| Google Chrome | Supported |
+
+Firefox, Brave, Arc, and other Chromium-based browsers are not supported in
+version 0.0.5.
+
+## Install
+
+1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
+2. Download `DockSpark-0.0.5.zip`. Do not download GitHub's automatically
+   generated source code archives.
+3. Unzip the file and move `DockSpark.app` to the Applications folder.
+4. Launch DockSpark and grant the requested macOS permissions.
+
+DockSpark is signed with a Developer ID certificate and notarized by Apple.
+
+## Permissions
+
+DockSpark requests only the system permissions needed for profile switching:
+
+- **Accessibility** detects pointer interaction with supported browser icons in
+  the Dock.
+- **Automation** lets DockSpark ask the selected browser to switch profiles.
+
+You can review or revoke these permissions at any time in **System Settings >
+Privacy & Security**.
+
+## Usage
+
+1. Add Safari or Google Chrome to the Dock.
+2. Configure the browser and its profiles in DockSpark.
+3. Hover over the browser's Dock icon.
+4. Select a profile from the popover.
 
 ## Screenshot
 
-![DockSpark screenshot](Assets/img_dockspark.jpg)
+![DockSpark profile management window](Assets/img_dockspark.jpg)
+
+> The screenshot previews the DockSpark interface. Version 0.0.5 currently
+> supports profile switching for Safari and Google Chrome only.
+
+## Updates
+
+DockSpark uses Sparkle for in-app updates. You can also download releases
+manually from the [Releases](https://github.com/DockSpark/DockSpark/releases)
+page.
+
+## Release integrity
+
+The SHA-256 checksum for `DockSpark-0.0.5.zip` is:
+
+```text
+0ac33aeba46a8fa7c4ac3464793f3d1be878f554df083c6543a8b9783d335514
+```
+
+Verify it after downloading:
+
+```sh
+shasum -a 256 DockSpark-0.0.5.zip
+```
+
+## Feedback
+
+Please use [GitHub Issues](https://github.com/DockSpark/DockSpark/issues) to
+report bugs or suggest improvements. Include your macOS version, browser
+version, and steps to reproduce the problem when reporting a bug.
+
+This repository contains DockSpark's public release materials. Application
+source code is not included.

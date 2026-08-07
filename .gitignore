@@ -25,7 +25,6 @@ logs/
 # Local environment and secrets
 .env
 .env.*
-!.env.example
 *.local
 
 # Package manager and test artifacts
@@ -33,7 +32,7 @@ node_modules/
 coverage/
 
 # This repository only contains public release materials
-src/    
+src/
 Source/
 Sources/
 App/
