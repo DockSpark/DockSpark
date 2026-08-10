@@ -31,12 +31,12 @@ the browser's profile menu.
 | Google Chrome | Supported |
 
 Firefox, Brave, Arc, and other Chromium-based browsers are not supported in
-version 0.0.5.
+version 0.0.6.
 
 ## Install
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.0.5.zip`. Do not download GitHub's automatically
+2. Download `DockSpark-0.0.6.zip`. Do not download GitHub's automatically
    generated source code archives.
 3. Unzip the file and move `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
@@ -65,7 +65,7 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.0.5 currently
+> The screenshot previews the DockSpark interface. Version 0.0.6 currently
 > supports profile switching for Safari and Google Chrome only.
 
 ## Updates
@@ -76,16 +76,16 @@ page.
 
 ## Release integrity
 
-The SHA-256 checksum for `DockSpark-0.0.5.zip` is:
+The SHA-256 checksum for `DockSpark-0.0.6.zip` is:
 
 ```text
-0ac33aeba46a8fa7c4ac3464793f3d1be878f554df083c6543a8b9783d335514
+55a0263a9d9e531eeec5dee8acaa5b8e72f628e3c0a70a2f6ce45afd4adf22cd
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.0.5.zip
+shasum -a 256 DockSpark-0.0.6.zip
 ```
 
 ## Feedback

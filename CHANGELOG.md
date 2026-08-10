@@ -2,6 +2,18 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.0.6] - 2026-08-10
+
+### Fixed
+
+- Corrected Safari installation-status detection for more accurate browser-list
+  results
+
+### Changed
+
+- Completed missing Simplified Chinese and English interface translations
+- Removed obsolete Firefox translation entries
+
 ## [0.0.5] - 2026-08-07
 
 ### Added
@@ -19,4 +31,5 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.0.6]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.6
 [0.0.5]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.5
