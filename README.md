@@ -38,8 +38,13 @@ version 0.0.6.
 ### Homebrew
 
 ```sh
-brew install --cask dockspark/tap/dockspark
+brew tap dockspark/dockspark https://github.com/DockSpark/DockSpark.git
+brew install --cask dockspark/dockspark/dockspark
 ```
+
+The explicit repository URL is required because this repository intentionally
+keeps the name `DockSpark` instead of using Homebrew's `homebrew-*` naming
+convention.
 
 ### Manual download
 
