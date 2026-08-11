@@ -35,6 +35,14 @@ version 0.0.6.
 
 ## Install
 
+### Homebrew
+
+```sh
+brew install --cask dockspark/tap/dockspark
+```
+
+### Manual download
+
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
 2. Download `DockSpark-0.0.6.zip`. Do not download GitHub's automatically
    generated source code archives.

@@ -61,3 +61,7 @@ tests/
 *.rb
 *.go
 *.rs
+
+# Homebrew cask definitions are distribution metadata, not source
+!Casks/
+!Casks/*.rb
