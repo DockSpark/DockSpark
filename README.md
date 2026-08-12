@@ -29,9 +29,16 @@ the browser's profile menu.
 | --- | --- |
 | Safari | Supported |
 | Google Chrome | Supported |
+| Chromium | Supported |
+| Microsoft Edge | Supported |
+| Brave Browser | Supported |
+| Vivaldi | Supported |
+| Opera | Supported |
+| Opera GX | Supported |
+| Arc | Supported |
 
-Firefox, Brave, Arc, and other Chromium-based browsers are not supported in
-version 0.0.6.
+The main-window sidebar currently lists only Safari and Google Chrome; the other
+supported browsers remain available via Dock hover in version 0.0.7.
 
 ## Install
 
@@ -44,7 +51,7 @@ brew install --cask dockspark/tap/dockspark
 ### Manual download
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.0.6.zip`. Do not download GitHub's automatically
+2. Download `DockSpark-0.0.7.zip`. Do not download GitHub's automatically
    generated source code archives.
 3. Unzip the file and move `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
@@ -64,7 +71,7 @@ Privacy & Security**.
 
 ## Usage
 
-1. Add Safari or Google Chrome to the Dock.
+1. Add a supported browser to the Dock.
 2. Configure the browser and its profiles in DockSpark.
 3. Hover over the browser's Dock icon.
 4. Select a profile from the popover.
@@ -73,8 +80,9 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.0.6 currently
-> supports profile switching for Safari and Google Chrome only.
+> The screenshot previews the DockSpark interface. Version 0.0.7 supports Dock
+> profile switching for Safari, Chrome, and other Chromium-based browsers listed
+> above.
 
 ## Updates
 
@@ -84,16 +92,16 @@ page.
 
 ## Release integrity
 
-The SHA-256 checksum for `DockSpark-0.0.6.zip` is:
+The SHA-256 checksum for `DockSpark-0.0.7.zip` is:
 
 ```text
-55a0263a9d9e531eeec5dee8acaa5b8e72f628e3c0a70a2f6ce45afd4adf22cd
+4ea038b5961916d7326f5c69650dbf634483d0d677fdc4f0937d0f9bb16ef48b
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.0.6.zip
+shasum -a 256 DockSpark-0.0.7.zip
 ```
 
 ## Feedback
