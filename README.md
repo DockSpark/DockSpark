@@ -38,7 +38,7 @@ the browser's profile menu.
 | Arc | Supported |
 
 The main-window sidebar currently lists only Safari and Google Chrome; the other
-supported browsers remain available via Dock hover in version 0.0.7.
+supported browsers remain available via Dock hover in version 0.0.8.
 
 ## Install
 
@@ -51,7 +51,7 @@ brew install --cask dockspark/tap/dockspark
 ### Manual download
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.0.7.zip`. Do not download GitHub's automatically
+2. Download `DockSpark-0.0.8.zip`. Do not download GitHub's automatically
    generated source code archives.
 3. Unzip the file and move `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
@@ -80,7 +80,7 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.0.7 supports Dock
+> The screenshot previews the DockSpark interface. Version 0.0.8 supports Dock
 > profile switching for Safari, Chrome, and other Chromium-based browsers listed
 > above.
 
@@ -92,16 +92,16 @@ page.
 
 ## Release integrity
 
-The SHA-256 checksum for `DockSpark-0.0.7.zip` is:
+The SHA-256 checksum for `DockSpark-0.0.8.zip` is:
 
 ```text
-4ea038b5961916d7326f5c69650dbf634483d0d677fdc4f0937d0f9bb16ef48b
+05387e5b2e60750ae06b9d77b99d5ce609ecff73e9574492577c63d81ba94e8f
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.0.7.zip
+shasum -a 256 DockSpark-0.0.8.zip
 ```
 
 ## Feedback

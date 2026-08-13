@@ -2,6 +2,32 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.0.8] - 2026-08-13
+
+### Added
+
+- **Check for Updates…** on the menu bar status item, so updates can be checked
+  without opening Settings
+- Confirmation before deleting a profile, with restore if deletion fails
+- An explanation before opening System Settings when Full Disk Access is needed
+  to read Chromium profiles
+
+### Fixed
+
+- Leftover hover popovers after the mouse leaves a Dock icon
+
+### Improved
+
+- Error messages when Chromium profile refresh fails
+- Simplified Chinese localization coverage
+- Distinct Debug and Release app icons so development builds are easier to tell
+  apart from the installed release app
+
+### Notes
+
+- The main-window sidebar currently lists only Safari and Google Chrome; other
+  supported browsers remain available via Dock hover
+
 ## [0.0.7] - 2026-08-12
 
 ### Added
@@ -53,6 +79,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.0.8]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.8
 [0.0.7]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.7
 [0.0.6]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.6
 [0.0.5]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.5
