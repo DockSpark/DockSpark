@@ -2,6 +2,34 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.0.9] - 2026-08-17
+
+### Added
+
+- **Menu Bar Icon** and **Dock Icon** toggles in General settings
+- Website, release notes, documentation, and **Send Feedback…** actions in the
+  Help menu, including a localized, prefilled feedback form
+- Website and X/Twitter links on the About page, plus a version badge
+- A notarized DMG for drag-to-Applications installation
+
+### Fixed
+
+- Incognito label movement when switching profiles
+
+### Improved
+
+- Grouped General settings layout and a Settings window that resizes for the
+  current page
+- Simplified Chinese and English localization coverage
+- Settings window behavior when the Dock icon is hidden
+
+### Notes
+
+- The main-window sidebar currently lists only Safari and Google Chrome; other
+  supported browsers remain available via Dock hover
+- If both the menu bar and Dock icons are hidden, reopen DockSpark from Launchpad
+  or Applications after closing its window
+
 ## [0.0.8] - 2026-08-13
 
 ### Added
@@ -79,6 +107,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.0.9]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.9
 [0.0.8]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.8
 [0.0.7]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.7
 [0.0.6]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.6
