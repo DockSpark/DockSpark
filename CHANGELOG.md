@@ -2,6 +2,45 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.1.0] - 2026-08-21
+
+### Added
+
+- Firefox profile switching and global Private Browsing from the Dock hover
+  popover
+- Firefox profile detection from legacy `profiles.ini` and current Profile Group
+  metadata, with custom display names kept separate from the real profile path
+- New installations show Safari plus installed copies of Google Chrome and
+  Firefox in the sidebar by default
+
+### Fixed
+
+- Content changes unexpectedly resizing the main window
+- Development and Release builds running at the same time and competing for Dock
+  hover events
+
+### Improved
+
+- Refreshed sidebar and browser list with clearer selection states, rounded app
+  icons, subtle borders, and installed browsers shown first
+- Chromium profile selection now defaults to the first available profile,
+  removes the empty selection, and preserves customized display names when
+  profile metadata is refreshed
+- Browsers that are not running now use their system app icon consistently in
+  the hover popover
+- Simplified Chinese and English profile labels and guidance
+
+### Notes
+
+- Firefox support currently targets the standard Firefox release, not Firefox
+  Developer Edition or Nightly
+- Firefox profile discovery may require Full Disk Access; if no profile metadata
+  can be read, refresh after granting access and reopening DockSpark
+- Other supported Chromium browsers are not enabled in the sidebar by default;
+  add installed browsers from the app list in the lower-left corner
+- If both the menu bar and Dock icons are hidden, reopen DockSpark from Launchpad
+  or Applications after closing its window
+
 ## [0.0.9] - 2026-08-17
 
 ### Added
@@ -107,6 +146,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.1.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.1.0
 [0.0.9]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.9
 [0.0.8]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.8
 [0.0.7]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.7
