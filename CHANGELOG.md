@@ -2,6 +2,49 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.2.0] - 2026-08-25
+
+### Added
+
+- Protected hover path so moving diagonally from a Dock icon into the popover
+  no longer causes an accidental switch or dismissal when the pointer briefly
+  crosses a neighboring icon
+- Versioned data migration to reduce repeated startup work and provide a
+  consistent upgrade path for existing browser and profile data
+- Anonymous product analytics for installation and session information, plus
+  successful profile additions, switches, and private-window actions; custom
+  events include only the browser category, never profile names, directories,
+  paths, UUIDs, or raw error text
+
+### Fixed
+
+- Firefox Private item label
+- Spacing in the hover profile list
+
+### Improved
+
+- Launch responsiveness by moving browser discovery and analytics
+  initialization out of the initial window-display path, while reusing cached
+  browser installation status
+- Chromium and Firefox now verify the bundle identifier and then launch through
+  the exact resolved application path, so the app that was checked is the one
+  that opens
+- Hardened Chromium and Firefox profile metadata reads by rejecting
+  symbolic-link paths and unexpectedly large files
+- Safari profile shortcuts are now sent only to the foreground Safari process,
+  reducing the chance of acting on the wrong process
+
+### Notes
+
+- Firefox support currently targets the standard Firefox release, not Firefox
+  Developer Edition or Nightly
+- Firefox profile discovery may require Full Disk Access; if no profile metadata
+  can be read, refresh after granting access and reopening DockSpark
+- Other supported Chromium browsers are not enabled in the sidebar by default;
+  add installed browsers from the app list in the lower-left corner
+- If both the menu bar and Dock icons are hidden, reopen DockSpark from Launchpad
+  or Applications after closing its window
+
 ## [0.1.0] - 2026-08-21
 
 ### Added
@@ -146,6 +189,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.2.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.2.0
 [0.1.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.1.0
 [0.0.9]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.9
 [0.0.8]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.8
