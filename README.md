@@ -14,6 +14,8 @@ the browser's profile menu.
 - Switch profiles from a popover attached to the browser's Dock icon
 - Manage browser profiles from a native macOS app
 - Use custom names and colors to identify profiles quickly
+- Choose which named profiles appear in the Dock hover menu
+- Use DockSpark Free, or unlock unlimited browsers and profiles with Pro
 - Show or hide the menu bar and Dock icons
 - Check for updates in the app
 - Open documentation or send structured feedback from the Help menu
@@ -49,18 +51,19 @@ be added from the app list.
 ### Homebrew
 
 ```sh
-brew install --cask dockspark/tap/dockspark
+brew trust --cask dockspark/tap/dockspark && \
+  brew install --cask dockspark/tap/dockspark
 ```
 
 ### Manual download
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.2.0.dmg`. Do not download GitHub's automatically
+2. Download `DockSpark-0.3.2.dmg`. Do not download GitHub's automatically
    generated source code archives.
 3. Open the disk image and drag `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
 
-The `DockSpark-0.2.0.zip` asset is also available for manual installation.
+The `DockSpark-0.3.2.zip` asset is also available for manual installation.
 
 DockSpark is signed with a Developer ID certificate and notarized by Apple.
 
@@ -88,7 +91,7 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.2.0 supports Dock
+> The screenshot previews the DockSpark interface. Version 0.3.2 supports Dock
 > profile switching for Safari, Firefox, Chrome, and other Chromium-based
 > browsers listed above.
 
@@ -103,14 +106,14 @@ page.
 The SHA-256 checksums are:
 
 ```text
-DockSpark-0.2.0.dmg  f30bc0f923eec346b713929753efdee0795bb477681591b95c2c9f01d5e92bdc
-DockSpark-0.2.0.zip  0174aa3d1bd99c488f68b2040c79b22ab6466d0b7d7d9fea9f3677683fab1004
+DockSpark-0.3.2.dmg  d923c20ab61d0858a7c1d232e0583830bf4fe55315960507d0d8ace6e67efb91
+DockSpark-0.3.2.zip  02489596d318b7390a25b6bef22ba680cbfa34f878bf47a366b1de3ec538d854
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.2.0.dmg DockSpark-0.2.0.zip
+shasum -a 256 DockSpark-0.3.2.dmg DockSpark-0.3.2.zip
 ```
 
 ## Feedback

@@ -2,6 +2,54 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.3.2] - 2026-09-07
+
+### Added
+
+- DockSpark Free and Pro licensing: the Free plan supports 1 browser with up to
+  3 named profiles; built-in Private Browsing and Incognito entries do not
+  count toward the profile limit
+- Pro removes browser and profile limits; activate, refresh, or deactivate this
+  Mac under Settings → License, with links to purchase or recover a license
+- Existing browser and profile configurations are preserved when Free limits
+  are reached; over-limit items are clearly marked and become available again
+  after disabling another item or activating Pro
+- A Show in Dock switch for each named profile, so it can be hidden from the
+  hover menu without being deleted
+
+### Fixed
+
+- Content being clipped at the bottom of Settings, and aligned English and
+  Chinese labels for Dock visibility, Free limits, and device plans
+- Sparkle updates prompting for the login Keychain password; license files now
+  live in Application Support, and the device identifier and refresh token use
+  the Keychain's default access rules
+- Launching without an activated license no longer touches the Keychain
+
+### Improved
+
+- Protected hover path now stays active only while the pointer continues toward
+  the popover, exits sooner when moving away, and ignores minor pointer jitter
+- Hardened local license storage, signature verification, background refresh,
+  and offline grace handling; background maintenance failures no longer
+  interrupt you with an alert
+- After a successful activation, leftover full redemption keys from older
+  builds are removed; already activated users do not need to activate again
+
+### Notes
+
+- Activating, refreshing, or deactivating a license requires an internet
+  connection; a verified Pro license continues to work through its validity
+  and offline grace periods
+- Firefox support currently targets the standard Firefox release, not Firefox
+  Developer Edition or Nightly
+- Firefox profile discovery may require Full Disk Access; if no profile metadata
+  can be read, refresh after granting access and reopening DockSpark
+- Other supported Chromium browsers are not enabled in the sidebar by default;
+  add installed browsers from the app list in the lower-left corner
+- If both the menu bar and Dock icons are hidden, reopen DockSpark from Launchpad
+  or Applications after closing its window
+
 ## [0.2.0] - 2026-08-25
 
 ### Added
@@ -189,6 +237,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.3.2]: https://github.com/DockSpark/DockSpark/releases/tag/v0.3.2
 [0.2.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.2.0
 [0.1.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.1.0
 [0.0.9]: https://github.com/DockSpark/DockSpark/releases/tag/v0.0.9
