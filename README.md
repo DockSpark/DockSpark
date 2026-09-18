@@ -58,12 +58,12 @@ brew trust --cask dockspark/tap/dockspark && \
 ### Manual download
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.3.2.dmg`. Do not download GitHub's automatically
+2. Download `DockSpark-0.4.0.dmg`. Do not download GitHub's automatically
    generated source code archives.
 3. Open the disk image and drag `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
 
-The `DockSpark-0.3.2.zip` asset is also available for manual installation.
+The `DockSpark-0.4.0.zip` asset is also available for manual installation.
 
 DockSpark is signed with a Developer ID certificate and notarized by Apple.
 
@@ -91,7 +91,7 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.3.2 supports Dock
+> The screenshot previews the DockSpark interface. Version 0.4.0 supports Dock
 > profile switching for Safari, Firefox, Chrome, and other Chromium-based
 > browsers listed above.
 
@@ -106,14 +106,14 @@ page.
 The SHA-256 checksums are:
 
 ```text
-DockSpark-0.3.2.dmg  d923c20ab61d0858a7c1d232e0583830bf4fe55315960507d0d8ace6e67efb91
-DockSpark-0.3.2.zip  02489596d318b7390a25b6bef22ba680cbfa34f878bf47a366b1de3ec538d854
+DockSpark-0.4.0.dmg  8f3e05658ee8674494d44999e4e1ba3a4ad7ba67599eca02e1b0de9a6d3688ff
+DockSpark-0.4.0.zip  62c95ede963d645a72c51b25e61fcc5d4f6b12db9278978be8b0291233e0cfe9
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.3.2.dmg DockSpark-0.3.2.zip
+shasum -a 256 DockSpark-0.4.0.dmg DockSpark-0.4.0.zip
 ```
 
 ## Feedback

@@ -2,6 +2,42 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.4.0] - 2026-09-18
+
+### Added
+
+- Left and right Docks now show a compact vertical hover list, positioned
+  against the visible Dock and icon bounds so the popover is not pushed back
+  onto the Dock
+- Right-clicking or Control-clicking a Dock icon immediately closes the hover
+  popover so it does not overlap the system Dock menu
+- On macOS 26 or later, General settings can enable native Liquid Glass for the
+  hover popover (off by default). On macOS 27, clarity and blur follow the
+  Liquid Glass slider in Appearance settings; macOS 26 uses the system standard
+  glass
+
+### Fixed
+
+- Side padding of the hover popover on a bottom Dock
+- Dock orientation and auto-hide detection so left and right Docks are no
+  longer misread as bottom
+
+### Notes
+
+- The Liquid Glass option appears only on macOS 26 or later and is off by
+  default
+- Activating, refreshing, or deactivating a license requires an internet
+  connection; a verified Pro license continues to work through its validity
+  and offline grace periods
+- Firefox support currently targets the standard Firefox release, not Firefox
+  Developer Edition or Nightly
+- Firefox profile discovery may require Full Disk Access; if no profile metadata
+  can be read, refresh after granting access and reopening DockSpark
+- Other supported Chromium browsers are not enabled in the sidebar by default;
+  add installed browsers from the app list in the lower-left corner
+- If both the menu bar and Dock icons are hidden, reopen DockSpark from Launchpad
+  or Applications after closing its window
+
 ## [0.3.2] - 2026-09-07
 
 ### Added
@@ -237,6 +273,7 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.4.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.4.0
 [0.3.2]: https://github.com/DockSpark/DockSpark/releases/tag/v0.3.2
 [0.2.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.2.0
 [0.1.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.1.0
