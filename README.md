@@ -1,5 +1,7 @@
 # DockSpark
 
+[English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md)
+
 DockSpark lets you switch browser profiles directly from the macOS Dock. Hover
 over a supported browser icon, then choose the profile you want without opening
 the browser's profile menu.
