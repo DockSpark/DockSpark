@@ -1,0 +1,4 @@
+interface:
+  display_name: "DockSpark"
+  short_description: "Explain, set up, and troubleshoot DockSpark"
+  default_prompt: "Use $dockspark to explain what DockSpark does and help me set it up or resolve a problem."

@@ -91,6 +91,47 @@ Privacy & Security**.
 3. Hover over the browser's Dock icon.
 4. Select a profile from the popover.
 
+## AI assistant skill
+
+The [DockSpark skill](skills/dockspark/SKILL.md) helps an AI assistant explain
+what DockSpark does and when it is useful, guide installation and everyday
+use, find official documentation, and troubleshoot common problems.
+Skill version **0.5.0** follows the App version; its bundled guidance was
+reviewed against DockSpark 0.5.0. The assistant answers in your language.
+
+Install it with the [Skills CLI](https://github.com/vercel-labs/skills)
+(requires Node.js; see its documentation for current requirements):
+
+```sh
+npx skills add DockSpark/DockSpark --skill dockspark
+```
+
+Choose your AI assistant when prompted. Installation is for the current project
+by default; add `-g` for global installation. The GitHub command requires the
+skill to have been published to this repository. From a local checkout, use:
+
+```sh
+npx skills add . --skill dockspark
+```
+
+For [manual installation in Codex](https://developers.openai.com/codex/skills/),
+copy the entire `skills/dockspark` directory,
+including `references/` and `agents/`, into `~/.agents/skills/dockspark` (or
+`.agents/skills/dockspark` in your project). Other assistants may use different
+skill directories. Reload your assistant's skills or start a new session if
+the skill does not appear.
+
+Example prompts:
+
+- `Use $dockspark to explain what DockSpark can help me do.`
+- `Use $dockspark to help me configure Chrome profiles.`
+- `Use $dockspark to troubleshoot why hovering over a Dock icon does nothing.`
+
+You can ask the same questions in Chinese or another language. The skill
+provides guidance; install DockSpark separately to use the app. For each new
+App release, review the skill's guidance and official links and update its
+version and reviewed baseline together.
+
 ## Screenshot
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
