@@ -2,6 +2,26 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.5.0] - 2026-10-28
+
+### Added and Improved
+
+- Full localization for Simplified Chinese, Traditional Chinese, English, Japanese, Korean, German, French, and Spanish, following the macOS app language; includes UI, error messages, and system permission strings
+- When an update is available, the menu bar shows a one-time “Install Update” entry; clicking it opens the update window. The same build number is not shown twice
+- The hover popover icon and label text now scale together with the actual Dock icon size (including Dock magnification), read once per pop-up without polling or window scanning
+- ESC and ⌘W close the hover popover directly, and the popover cleans up its session so the same icon can be shown again
+- General Settings adds an anonymous-usage-analytics switch (on by default); turning it off blocks custom events, SDK automatic stats, and pending sends, and the next launch does not initialize the SDK
+- Deleting the currently selected profile now selects the adjacent one instead of leaving the editor blank
+- Safari hover menu shortcut numbering now matches the visible items; hidden items still keep their number and Private items do not take a slot
+
+
+### Notes
+
+- Anti-rollback metadata now uses the Keychain. Upgrading from older plaintext
+  metadata requires one online verification to restore offline licensing;
+  the license key does not need to be entered again.
+- Signed with Developer ID and notarized by Apple; requires macOS 14.0 or later.
+
 ## [0.4.0] - 2026-09-18
 
 ### Added

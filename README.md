@@ -19,7 +19,10 @@ the browser's profile menu.
 - Show or hide the menu bar and Dock icons
 - Check for updates in the app
 - Open documentation or send structured feedback from the Help menu
-- Use the app in English or Simplified Chinese
+- Use the app in English, Simplified Chinese, Traditional Chinese, Japanese,
+  Korean, German, French, or Spanish
+- Scale hover popovers with the Dock icon size, including magnification
+- Turn off anonymous usage analytics in General settings
 
 ## Requirements
 
@@ -42,9 +45,10 @@ the browser's profile menu.
 | Opera GX | Supported |
 | Arc | Supported |
 
-New installations show Safari plus installed copies of Google Chrome and Firefox
-in the sidebar. Other supported browsers remain available via Dock hover, or can
-be added from the app list.
+Safari, Google Chrome, and Firefox are enabled by default when installed.
+The Free plan allows one enabled browser and three named profiles per browser;
+Private Browsing and Incognito entries do not count toward the profile limit.
+Pro removes these limits. Add other installed browsers from the app list.
 
 ## Install
 
@@ -58,12 +62,12 @@ brew trust --cask dockspark/tap/dockspark && \
 ### Manual download
 
 1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Download `DockSpark-0.4.0.dmg`. Do not download GitHub's automatically
+2. Download `DockSpark-0.5.0.dmg`. Do not download GitHub's automatically
    generated source code archives.
 3. Open the disk image and drag `DockSpark.app` to the Applications folder.
 4. Launch DockSpark and grant the requested macOS permissions.
 
-The `DockSpark-0.4.0.zip` asset is also available for manual installation.
+The `DockSpark-0.5.0.zip` asset is also available for manual installation.
 
 DockSpark is signed with a Developer ID certificate and notarized by Apple.
 
@@ -91,7 +95,7 @@ Privacy & Security**.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.4.0 supports Dock
+> The screenshot previews the DockSpark interface. Version 0.5.0 supports Dock
 > profile switching for Safari, Firefox, Chrome, and other Chromium-based
 > browsers listed above.
 
@@ -106,14 +110,14 @@ page.
 The SHA-256 checksums are:
 
 ```text
-DockSpark-0.4.0.dmg  8f3e05658ee8674494d44999e4e1ba3a4ad7ba67599eca02e1b0de9a6d3688ff
-DockSpark-0.4.0.zip  62c95ede963d645a72c51b25e61fcc5d4f6b12db9278978be8b0291233e0cfe9
+DockSpark-0.5.0.dmg  90c0f9369d67eb33e6939b1cac008ec70277f7c176c0f2a1aa0e50fb08e85eff
+DockSpark-0.5.0.zip  1d7eb10b9ce7736f2a1e5f1fd790eebb399675fadb95702a6032f329f65db129
 ```
 
 Verify it after downloading:
 
 ```sh
-shasum -a 256 DockSpark-0.4.0.dmg DockSpark-0.4.0.zip
+shasum -a 256 DockSpark-0.5.0.dmg DockSpark-0.5.0.zip
 ```
 
 ## Feedback
