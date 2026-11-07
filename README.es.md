@@ -58,11 +58,11 @@ brew trust --cask dockspark/tap/dockspark && \
 ### Descarga manual
 
 1. Abre la [última versión](https://github.com/DockSpark/DockSpark/releases/latest).
-2. Descarga `DockSpark-0.5.0.dmg`. No descargues los archivos de código fuente que GitHub genera automáticamente.
+2. Descarga `DockSpark-0.5.1.dmg`. No descargues los archivos de código fuente que GitHub genera automáticamente.
 3. Abre la imagen de disco y arrastra `DockSpark.app` a la carpeta Aplicaciones.
 4. Inicia DockSpark y concede los permisos de macOS solicitados.
 
-El archivo `DockSpark-0.5.0.zip` también está disponible para la instalación manual.
+El archivo `DockSpark-0.5.1.zip` también está disponible para la instalación manual.
 
 DockSpark está firmado con un certificado Developer ID y notarizado por Apple.
 
@@ -124,14 +124,14 @@ DockSpark utiliza Sparkle para las actualizaciones dentro de la app. También pu
 Las sumas de comprobación SHA-256 son:
 
 ```text
-DockSpark-0.5.0.dmg  90c0f9369d67eb33e6939b1cac008ec70277f7c176c0f2a1aa0e50fb08e85eff
-DockSpark-0.5.0.zip  1d7eb10b9ce7736f2a1e5f1fd790eebb399675fadb95702a6032f329f65db129
+DockSpark-0.5.1.dmg  b2075ea0053380903384d270a2d384dd3f31dbf4650c446d65a0e6c91058a493
+DockSpark-0.5.1.zip  60f67196635c79dcbb326292fe646a84c232341e5d61107289398e434b45ca1c
 ```
 
 Compruébalas después de la descarga:
 
 ```sh
-shasum -a 256 DockSpark-0.5.0.dmg DockSpark-0.5.0.zip
+shasum -a 256 DockSpark-0.5.1.dmg DockSpark-0.5.1.zip
 ```
 
 ## Comentarios

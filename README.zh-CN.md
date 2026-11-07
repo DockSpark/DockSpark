@@ -58,11 +58,11 @@ brew trust --cask dockspark/tap/dockspark && \
 ### 手动下载
 
 1. 打开[最新版本页面](https://github.com/DockSpark/DockSpark/releases/latest)。
-2. 下载 `DockSpark-0.5.0.dmg`。请勿下载 GitHub 自动生成的源代码压缩包。
+2. 下载 `DockSpark-0.5.1.dmg`。请勿下载 GitHub 自动生成的源代码压缩包。
 3. 打开磁盘映像，将 `DockSpark.app` 拖入“应用程序”文件夹。
 4. 启动 DockSpark，并授予所请求的 macOS 权限。
 
-也可以下载 `DockSpark-0.5.0.zip` 手动安装。
+也可以下载 `DockSpark-0.5.1.zip` 手动安装。
 
 DockSpark 已使用 Developer ID 证书签名，并通过 Apple 公证。
 
@@ -124,14 +124,14 @@ DockSpark 使用 Sparkle 提供应用内更新。你也可以从[发布页面](h
 SHA-256 校验值如下：
 
 ```text
-DockSpark-0.5.0.dmg  90c0f9369d67eb33e6939b1cac008ec70277f7c176c0f2a1aa0e50fb08e85eff
-DockSpark-0.5.0.zip  1d7eb10b9ce7736f2a1e5f1fd790eebb399675fadb95702a6032f329f65db129
+DockSpark-0.5.1.dmg  b2075ea0053380903384d270a2d384dd3f31dbf4650c446d65a0e6c91058a493
+DockSpark-0.5.1.zip  60f67196635c79dcbb326292fe646a84c232341e5d61107289398e434b45ca1c
 ```
 
 下载后可运行以下命令验证：
 
 ```sh
-shasum -a 256 DockSpark-0.5.0.dmg DockSpark-0.5.0.zip
+shasum -a 256 DockSpark-0.5.1.dmg DockSpark-0.5.1.zip
 ```
 
 ## 反馈

@@ -58,11 +58,11 @@ brew trust --cask dockspark/tap/dockspark && \
 ### 직접 다운로드
 
 1. [최신 릴리스](https://github.com/DockSpark/DockSpark/releases/latest)를 엽니다.
-2. `DockSpark-0.5.0.dmg`를 다운로드합니다. GitHub에서 자동 생성한 소스 코드 압축 파일은 다운로드하지 마세요.
+2. `DockSpark-0.5.1.dmg`를 다운로드합니다. GitHub에서 자동 생성한 소스 코드 압축 파일은 다운로드하지 마세요.
 3. 디스크 이미지를 열고 `DockSpark.app`을 응용 프로그램 폴더로 드래그합니다.
 4. DockSpark를 실행하고 요청하는 macOS 권한을 허용합니다.
 
-수동 설치용 `DockSpark-0.5.0.zip` 파일도 제공됩니다.
+수동 설치용 `DockSpark-0.5.1.zip` 파일도 제공됩니다.
 
 DockSpark는 Developer ID 인증서로 서명되었으며 Apple의 공증을 받았습니다.
 
@@ -124,14 +124,14 @@ DockSpark는 Sparkle을 사용하여 앱 내 업데이트를 제공합니다. [�
 SHA-256 체크섬은 다음과 같습니다.
 
 ```text
-DockSpark-0.5.0.dmg  90c0f9369d67eb33e6939b1cac008ec70277f7c176c0f2a1aa0e50fb08e85eff
-DockSpark-0.5.0.zip  1d7eb10b9ce7736f2a1e5f1fd790eebb399675fadb95702a6032f329f65db129
+DockSpark-0.5.1.dmg  b2075ea0053380903384d270a2d384dd3f31dbf4650c446d65a0e6c91058a493
+DockSpark-0.5.1.zip  60f67196635c79dcbb326292fe646a84c232341e5d61107289398e434b45ca1c
 ```
 
 다운로드 후 다음 명령으로 확인하세요.
 
 ```sh
-shasum -a 256 DockSpark-0.5.0.dmg DockSpark-0.5.0.zip
+shasum -a 256 DockSpark-0.5.1.dmg DockSpark-0.5.1.zip
 ```
 
 ## 피드백
