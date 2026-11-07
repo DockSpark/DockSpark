@@ -2,6 +2,13 @@
 
 All notable changes to DockSpark are documented in this file.
 
+## [0.5.1] - 2026-11-08
+
+- Improved Dock hover responsiveness and popover dismissal across Dock positions.
+- Made Safari profile switching more reliable, especially when Safari is still starting up.
+- Fixed offline license migration from older versions and license recovery after reconnecting.
+- Profile edits now save when the field loses focus. Improved label contrast and corrected several translations.
+
 ## [0.5.0] - 2026-10-28
 
 ### Added and Improved
