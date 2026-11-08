@@ -57,7 +57,7 @@ brew trust --cask dockspark/tap/dockspark && \
 
 ### 手動ダウンロード
 
-1. [最新リリース](https://github.com/DockSpark/DockSpark/releases/latest)を開きます。
+1. [DockSpark 0.5.1 のリリース](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)を開きます。
 2. `DockSpark-0.5.1.dmg` をダウンロードします。GitHub が自動生成したソースコードのアーカイブはダウンロードしないでください。
 3. ディスクイメージを開き、`DockSpark.app` を「アプリケーション」フォルダにドラッグします。
 4. DockSpark を起動し、要求された macOS の権限を許可します。
@@ -85,7 +85,7 @@ DockSpark は、プロファイルの切り替えに必要なシステム権限�
 
 ## AI アシスタント用スキル
 
-[DockSpark スキル](skills/dockspark/SKILL.md)は、AI アシスタントが DockSpark の用途や活用場面を説明し、インストールや日常的な使い方を案内し、公式ドキュメントを探し、よくある問題を解決するのに役立ちます。スキルのバージョン **0.5.0** はアプリのバージョンに対応しており、同梱のガイドは DockSpark 0.5.0 に基づいて確認済みです。アシスタントはあなたの言語で回答します。
+[DockSpark スキル](skills/dockspark/SKILL.md)は、AI アシスタントが DockSpark の用途や活用場面を説明し、インストールや日常的な使い方を案内し、公式ドキュメントを探し、よくある問題を解決するのに役立ちます。スキルのバージョン **0.5.1** はアプリのバージョンに対応しており、同梱のガイドは DockSpark 0.5.1 に基づいて確認済みです。アシスタントはあなたの言語で回答します。
 
 [Skills CLI](https://github.com/vercel-labs/skills) でインストールします（Node.js が必要です。現在の動作要件は CLI のドキュメントをご覧ください）。
 
@@ -93,7 +93,7 @@ DockSpark は、プロファイルの切り替えに必要なシステム権限�
 npx skills add DockSpark/DockSpark --skill dockspark
 ```
 
-指示に従って AI アシスタントを選択してください。デフォルトでは現在のプロジェクトにインストールされます。グローバルにインストールする場合は `-g` を追加します。上記の GitHub コマンドを使うには、スキルがこのリポジトリで公開されている必要があります。ローカルのチェックアウトからは、次のコマンドを使います。
+指示に従って AI アシスタントを選択してください。デフォルトでは現在のプロジェクトにインストールされます。グローバルにインストールする場合は `-g` を追加します。ローカルのチェックアウトからは、次のコマンドを使います。
 
 ```sh
 npx skills add . --skill dockspark
@@ -113,11 +113,12 @@ npx skills add . --skill dockspark
 
 ![DockSpark のプロファイル管理ウインドウ](Assets/img_dockspark.jpg)
 
-> DockSpark のインターフェースを示すスクリーンショットです。バージョン 0.5.0 は、Safari、Firefox、Chrome、および上表に記載されたその他の Chromium ベースのブラウザで、Dock からのプロファイル切り替えに対応しています。
+> DockSpark のインターフェースを示すスクリーンショットです。バージョン 0.5.1 は、Safari、Firefox、Chrome、および上表に記載されたその他の Chromium ベースのブラウザで、Dock からのプロファイル切り替えに対応しています。
 
 ## アップデート
 
 DockSpark は Sparkle を使ってアプリ内アップデートを提供します。[リリースページ](https://github.com/DockSpark/DockSpark/releases)から手動でダウンロードすることもできます。
+変更点は [0.5.1 のリリースノート](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1) をご覧ください。
 
 ## リリースファイルの整合性
 

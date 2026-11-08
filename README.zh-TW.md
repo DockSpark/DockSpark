@@ -57,7 +57,7 @@ brew trust --cask dockspark/tap/dockspark && \
 
 ### 手動下載
 
-1. 開啟[最新版本頁面](https://github.com/DockSpark/DockSpark/releases/latest)。
+1. 開啟[DockSpark 0.5.1 發佈頁面](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)。
 2. 下載 `DockSpark-0.5.1.dmg`。請勿下載 GitHub 自動產生的原始碼壓縮檔。
 3. 開啟磁碟映像檔，將 `DockSpark.app` 拖入「應用程式」檔案夾。
 4. 啟動 DockSpark，並授予所要求的 macOS 權限。
@@ -85,7 +85,7 @@ DockSpark 僅要求切換設定檔所需的系統權限：
 
 ## AI 助理技能
 
-[DockSpark 技能](skills/dockspark/SKILL.md)可協助 AI 助理介紹 DockSpark 的用途與適用情境、引導安裝與日常使用、尋找官方文件，以及排解常見問題。技能版本 **0.5.0** 與 App 版本保持一致；隨附指南已對照 DockSpark 0.5.0 檢查。助理會使用你的語言回答。
+[DockSpark 技能](skills/dockspark/SKILL.md)可協助 AI 助理介紹 DockSpark 的用途與適用情境、引導安裝與日常使用、尋找官方文件，以及排解常見問題。技能版本 **0.5.1** 與 App 版本保持一致；隨附指南已對照 DockSpark 0.5.1 檢查。助理會使用你的語言回答。
 
 透過 [Skills CLI](https://github.com/vercel-labs/skills) 安裝（需要 Node.js；目前環境需求請參閱其文件）：
 
@@ -93,7 +93,7 @@ DockSpark 僅要求切換設定檔所需的系統權限：
 npx skills add DockSpark/DockSpark --skill dockspark
 ```
 
-依提示選擇你的 AI 助理。預設安裝至目前專案，加入 `-g` 可全域安裝。上述 GitHub 指令要求技能已發佈至本儲存庫。從本機簽出目錄安裝時，使用：
+依提示選擇你的 AI 助理。預設安裝至目前專案，加入 `-g` 可全域安裝。從本機簽出目錄安裝時，使用：
 
 ```sh
 npx skills add . --skill dockspark
@@ -113,11 +113,12 @@ npx skills add . --skill dockspark
 
 ![DockSpark 設定檔管理視窗](Assets/img_dockspark.jpg)
 
-> 截圖展示 DockSpark 的介面。0.5.0 版本支援從 Dock 切換 Safari、Firefox、Chrome，以及上表所列其他 Chromium 核心瀏覽器的設定檔。
+> 截圖展示 DockSpark 的介面。0.5.1 版本支援從 Dock 切換 Safari、Firefox、Chrome，以及上表所列其他 Chromium 核心瀏覽器的設定檔。
 
 ## 更新
 
 DockSpark 使用 Sparkle 提供 App 內更新。你也可以從[發佈頁面](https://github.com/DockSpark/DockSpark/releases)手動下載版本。
+本次變更請參閱 [0.5.1 版本說明](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)。
 
 ## 發佈檔案完整性
 

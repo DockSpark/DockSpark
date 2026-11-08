@@ -57,7 +57,7 @@ brew trust --cask dockspark/tap/dockspark && \
 
 ### 직접 다운로드
 
-1. [최신 릴리스](https://github.com/DockSpark/DockSpark/releases/latest)를 엽니다.
+1. [DockSpark 0.5.1 릴리스](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)를 엽니다.
 2. `DockSpark-0.5.1.dmg`를 다운로드합니다. GitHub에서 자동 생성한 소스 코드 압축 파일은 다운로드하지 마세요.
 3. 디스크 이미지를 열고 `DockSpark.app`을 응용 프로그램 폴더로 드래그합니다.
 4. DockSpark를 실행하고 요청하는 macOS 권한을 허용합니다.
@@ -85,7 +85,7 @@ DockSpark는 프로필 전환에 필요한 시스템 권한만 요청합니다.
 
 ## AI 어시스턴트 스킬
 
-[DockSpark 스킬](skills/dockspark/SKILL.md)은 AI 어시스턴트가 DockSpark의 기능과 활용 상황을 설명하고, 설치 및 일상적인 사용을 안내하고, 공식 문서를 찾고, 일반적인 문제를 해결하도록 돕습니다. 스킬 버전 **0.5.0**은 앱 버전에 맞춰 관리되며, 포함된 안내는 DockSpark 0.5.0을 기준으로 검토되었습니다. 어시스턴트는 사용자의 언어로 답변합니다.
+[DockSpark 스킬](skills/dockspark/SKILL.md)은 AI 어시스턴트가 DockSpark의 기능과 활용 상황을 설명하고, 설치 및 일상적인 사용을 안내하고, 공식 문서를 찾고, 일반적인 문제를 해결하도록 돕습니다. 스킬 버전 **0.5.1**은 앱 버전에 맞춰 관리되며, 포함된 안내는 DockSpark 0.5.1을 기준으로 검토되었습니다. 어시스턴트는 사용자의 언어로 답변합니다.
 
 [Skills CLI](https://github.com/vercel-labs/skills)로 설치합니다(Node.js가 필요하며, 현재 요구 사항은 CLI 문서를 참고하세요).
 
@@ -93,7 +93,7 @@ DockSpark는 프로필 전환에 필요한 시스템 권한만 요청합니다.
 npx skills add DockSpark/DockSpark --skill dockspark
 ```
 
-안내에 따라 AI 어시스턴트를 선택하세요. 기본적으로 현재 프로젝트에 설치되며, 전역 설치에는 `-g`를 추가합니다. 위 GitHub 명령을 사용하려면 스킬이 이 저장소에 게시되어 있어야 합니다. 로컬 체크아웃에서 설치할 때는 다음 명령을 사용하세요.
+안내에 따라 AI 어시스턴트를 선택하세요. 기본적으로 현재 프로젝트에 설치되며, 전역 설치에는 `-g`를 추가합니다. 로컬 체크아웃에서 설치할 때는 다음 명령을 사용하세요.
 
 ```sh
 npx skills add . --skill dockspark
@@ -113,11 +113,12 @@ npx skills add . --skill dockspark
 
 ![DockSpark 프로필 관리 창](Assets/img_dockspark.jpg)
 
-> DockSpark 인터페이스를 보여 주는 스크린샷입니다. 버전 0.5.0은 Safari, Firefox, Chrome 및 위 표에 나열된 다른 Chromium 기반 브라우저의 Dock 프로필 전환을 지원합니다.
+> DockSpark 인터페이스를 보여 주는 스크린샷입니다. 버전 0.5.1은 Safari, Firefox, Chrome 및 위 표에 나열된 다른 Chromium 기반 브라우저의 Dock 프로필 전환을 지원합니다.
 
 ## 업데이트
 
 DockSpark는 Sparkle을 사용하여 앱 내 업데이트를 제공합니다. [릴리스 페이지](https://github.com/DockSpark/DockSpark/releases)에서 직접 다운로드할 수도 있습니다.
+변경 사항은 [0.5.1 릴리스 노트](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)에서 확인할 수 있습니다.
 
 ## 릴리스 파일 무결성
 

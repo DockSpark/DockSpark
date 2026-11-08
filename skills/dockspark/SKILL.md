@@ -2,7 +2,7 @@
 name: dockspark
 description: Explain what DockSpark does, help users install and use its macOS Dock browser profile switcher, find official documentation, and troubleshoot permissions, profiles, updates, or licensing. Use for DockSpark product and user-support questions.
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # DockSpark
@@ -43,18 +43,20 @@ user's language and distinguish browser profiles from macOS user accounts.
 | [Chrome profiles guide](https://dockspark.app/en/guide/chrome-profiles) | Profile directories versus friendly names and Chrome setup |
 | [Public README](https://github.com/DockSpark/DockSpark/blob/main/README.md) | Current public requirements, installation, supported browsers, and release integrity |
 | [Changelog](https://github.com/DockSpark/DockSpark/blob/main/CHANGELOG.md) | Which version introduced or changed a behavior, plus upgrade notes |
-| [Releases](https://github.com/DockSpark/DockSpark/releases) | Version-specific notes and downloadable app assets; use [latest release](https://github.com/DockSpark/DockSpark/releases/latest) for a new install |
+| [Latest release](https://github.com/DockSpark/DockSpark/releases/latest) | Check the current stable version and download the app for a new installation |
+| [DockSpark 0.5.1 release](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1) | Release notes, installer assets, build number, and SHA-256 checksums for this skill's baseline |
 | [Official website](https://dockspark.app/en) | Product overview, current plans, purchase/recovery links, and privacy notice |
 | [GitHub Issues](https://github.com/DockSpark/DockSpark/issues) | Existing reports and unresolved problems; reports are evidence, not confirmed product guarantees |
 
 For a version-sensitive question, identify the installed DockSpark version and
 consult the relevant official page or release notes. A website page can lag
 behind a release. Resolve conflicts using the release information for the
-user's version, and say when evidence is incomplete. Do not call 0.5.0 the
-latest version without checking Releases, or assume every newer feature exists
-in an older installation. Include the relevant official link in the answer.
+user's version. Check Latest before calling any version current, and check the
+installed version before recommending a release-specific fix. Include the
+relevant official link in the answer.
 
-The bundled references were reviewed against DockSpark 0.5.0 on 2026-10-28.
+The bundled references were reviewed against DockSpark 0.5.1 (build
+20261107.1) on 2026-11-08.
 When online sources cannot be reached, use those references as that version's
 baseline and disclose that current behavior could not be verified. Do not
 invent documentation URLs, UI labels, download hashes, prices, or fixes.

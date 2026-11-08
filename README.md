@@ -63,7 +63,7 @@ brew trust --cask dockspark/tap/dockspark && \
 
 ### Manual download
 
-1. Open the [latest release](https://github.com/DockSpark/DockSpark/releases/latest).
+1. Open the [DockSpark 0.5.1 release](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1).
 2. Download `DockSpark-0.5.1.dmg`. Do not download GitHub's automatically
    generated source code archives.
 3. Open the disk image and drag `DockSpark.app` to the Applications folder.
@@ -98,8 +98,8 @@ Privacy & Security**.
 The [DockSpark skill](skills/dockspark/SKILL.md) helps an AI assistant explain
 what DockSpark does and when it is useful, guide installation and everyday
 use, find official documentation, and troubleshoot common problems.
-Skill version **0.5.0** follows the App version; its bundled guidance was
-reviewed against DockSpark 0.5.0. The assistant answers in your language.
+Skill version **0.5.1** follows the App version; its bundled guidance was
+reviewed against DockSpark 0.5.1. The assistant answers in your language.
 
 Install it with the [Skills CLI](https://github.com/vercel-labs/skills)
 (requires Node.js; see its documentation for current requirements):
@@ -109,8 +109,9 @@ npx skills add DockSpark/DockSpark --skill dockspark
 ```
 
 Choose your AI assistant when prompted. Installation is for the current project
-by default; add `-g` for global installation. The GitHub command requires the
-skill to have been published to this repository. From a local checkout, use:
+by default; add `-g` for global installation.
+
+From a local checkout, use:
 
 ```sh
 npx skills add . --skill dockspark
@@ -138,7 +139,7 @@ version and reviewed baseline together.
 
 ![DockSpark profile management window](Assets/img_dockspark.jpg)
 
-> The screenshot previews the DockSpark interface. Version 0.5.0 supports Dock
+> The screenshot previews the DockSpark interface. Version 0.5.1 supports Dock
 > profile switching for Safari, Firefox, Chrome, and other Chromium-based
 > browsers listed above.
 
@@ -147,6 +148,8 @@ version and reviewed baseline together.
 DockSpark uses Sparkle for in-app updates. You can also download releases
 manually from the [Releases](https://github.com/DockSpark/DockSpark/releases)
 page.
+
+See the [0.5.1 release notes](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1) for what changed.
 
 ## Release integrity
 

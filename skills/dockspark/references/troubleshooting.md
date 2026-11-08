@@ -1,6 +1,6 @@
 # DockSpark troubleshooting
 
-Baseline: DockSpark 0.5.0, reviewed 2026-10-28. Find authoritative sources in
+Baseline: DockSpark 0.5.1, reviewed 2026-11-08. Find authoritative sources in
 [SKILL.md](../SKILL.md); see [Usage](usage.md) for setup and permission details.
 
 ## Start with the symptom
@@ -24,8 +24,11 @@ checks do not resolve it, collect a report rather than repeating resets.
    a browser is marked unavailable.
 3. Check DockSpark's Accessibility permission in System Settings > Privacy &
    Security. After enabling it, reopen DockSpark and hover again.
-4. With auto-hide, reveal the Dock fully before hovering. For persistent panel
-   placement failures, record Dock/display layout and any Dock utilities.
+4. With auto-hide, reveal the Dock fully before hovering. On older releases,
+   update and retry if the panel appears slowly, closes too soon, or lingers
+   after the pointer moves away. 0.5.1 improved hover and dismissal for bottom,
+   left, and right Docks. For persistent issues, record Dock/display layout and
+   any Dock utilities.
 
 If the panel appears but clicking an entry fails, inspect any macOS Automation
 prompt or the browser-specific permission under Privacy & Security, then retry
@@ -60,10 +63,17 @@ label or rename a browser folder to match it. Check equivalent official
 browser information for other Chromium browsers instead of assuming all use
 Chrome's internal URL.
 
-For Safari/Firefox, check the configured entry and the browser's actual
-profiles using their own workflow. Do not transfer the Chromium directory fix
-to those browsers. If only Safari switching fails, check whether an Automation
-request was denied and include the exact action/error in a report.
+For Safari, compare the order of named entries with Safari's Profiles menu.
+If switching fails only while Safari is starting, update from older versions
+and compare with a retry after Safari is fully open. 0.5.1 improves cold-start
+switching and reports timeouts separately from denied Automation access.
+Check the Safari and System Events entries under **Privacy & Security >
+Automation** when DockSpark reports denied access. Include the exact error and
+whether Safari was already running if the issue persists.
+
+For Firefox, verify the selected entry is bound to the intended profile in the
+detected list. If a Chromium directory edit appears unsaved, move focus out of
+the field and check that the value matches an actual profile directory.
 
 ## Permission or update problems
 
@@ -86,12 +96,24 @@ one enabled browser and three named profiles; private entries are excluded.
 Existing over-limit entries remain configured. Disabling another item or
 activating Pro can restore availability without deleting profiles.
 
-For activation/refresh/deactivation, check connectivity and the message shown
-in Settings > License. Use the app's purchase/recovery links when needed.
-After upgrading to 0.5.0 from older plaintext anti-rollback metadata, one online
-verification is required to restore offline licensing; the license key does
-not need to be entered again. Do not remove Keychain items or promise an
-unverified reset, activation allowance, or offline grace duration.
+For activation, refresh, or deactivation, check connectivity and the message
+shown in **Settings > License**. Use the app's purchase or recovery links when
+needed.
+
+- On 0.5.0, upgrading from older license storage required one online
+  verification. On 0.5.1, a valid local license issued before 0.5.0 can migrate
+  offline on the same Mac if the installation has never established the newer
+  verification baseline. The existing activation carries over automatically.
+- If DockSpark asks to verify the license or system clock, check the Mac's
+  date and time, connect to the internet, and reopen DockSpark so it can check
+  the existing activation. Use **Refresh License** in **Settings > License**
+  when that button is available. Online verification is required when an
+  established baseline is missing or damaged, or the system clock was set back
+  substantially.
+- A connection failure leaves a verified Pro license usable through its
+  signed validity and offline grace periods. On 0.5.1, DockSpark retries a
+  pending refresh when connectivity returns. If the warning persists, capture
+  the exact message. Use **Recover License** if you need to retrieve your key.
 
 ## Escalate unresolved problems
 

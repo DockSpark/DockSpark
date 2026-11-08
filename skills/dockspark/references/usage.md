@@ -1,6 +1,6 @@
 # DockSpark usage
 
-Baseline: DockSpark 0.5.0, reviewed 2026-10-28. Use the official source table in
+Baseline: DockSpark 0.5.1, reviewed 2026-11-08. Use the official source table in
 [SKILL.md](../SKILL.md) to check later releases or exact UI instructions.
 
 ## Requirements and browsers
@@ -10,9 +10,9 @@ Baseline: DockSpark 0.5.0, reviewed 2026-10-28. Use the official source table in
 - Supported browsers: Safari, Firefox (standard release), Google Chrome,
   Chromium, Microsoft Edge, Brave Browser, Vivaldi, Opera, Opera GX, and Arc.
   Firefox Developer Edition and Nightly are not supported in this baseline.
-- Safari, Chrome, and Firefox are listed by default when installed. Add other
-  installed browsers from the app list in the lower-left corner, and check
-  which browser is enabled under the current plan.
+- Safari, Chrome, and Firefox are enabled by default when installed, subject
+  to the current plan. To switch browsers on Free, disable the active browser
+  in the app list in the lower-left corner, then enable the one you want.
 
 ## Install and update
 
@@ -28,12 +28,15 @@ For manual installation, open the official latest release, choose the
 Applications. Launch that installed copy. A versioned ZIP app asset is also
 available. GitHub's generated source archives are not installable app packages.
 
-The 0.5.0 release is Developer ID signed and Apple notarized. If verifying a
-download, compare its SHA-256 with the official checksum for that exact version
-and filename; do not reuse a checksum from another release.
+The [0.5.1 release](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1)
+is build `20261107.1`. The app and DMG are Developer ID signed and Apple
+notarized. Compare a download's SHA-256 with the checksum for its exact version
+and filename on the release page.
 
-Use **Check for Updates…** in the app (including its menu bar menu), or download
-the desired release manually. DockSpark uses Sparkle for in-app updates.
+Use **Check for Updates…** in the app, or download the desired release
+manually. DockSpark uses Sparkle for in-app updates. The 0.5.1 in-app release
+notes are available in Simplified Chinese and English. Other app languages
+show the English notes for this release.
 
 ## Permissions
 
@@ -42,7 +45,7 @@ Review permissions under **System Settings > Privacy & Security**:
 | Permission | Why it is used | When to check it |
 | --- | --- | --- |
 | Accessibility | Detect the hovered Dock icon and its position | The hover panel does not appear |
-| Automation | Ask a browser to perform an action when required | macOS requests consent or switching is blocked |
+| Automation | Control Safari and System Events when switching profiles or opening a private window in Safari | macOS requests consent or a Safari action reports denied access |
 | Full Disk Access | Read Chromium/Firefox profile metadata when access is needed | Profile discovery cannot read the browser's metadata |
 
 Full Disk Access is optional, not a requirement for every feature. Follow the
@@ -59,9 +62,10 @@ reopen DockSpark and retry; refresh profiles for discovery problems.
    label: a profile called `Work` can live in `Profile 1`. Use the detected
    directory, not a guessed sequence. In Chrome, `chrome://version` in the
    intended profile shows its Profile Path; the final directory identifies it.
-4. Customize the display name and color as needed. A named profile must have
-   **Show in Dock** enabled to appear in the hover menu. Hiding it is different
-   from deleting it.
+4. Customize the display name and color as needed. In 0.5.1, changes to the
+   name and manually entered Chromium directory are validated and saved when
+   you submit the field or move focus away. Turn on **Show in Dock** for each
+   named profile you want in the hover menu.
 5. Keep that browser's icon in the Dock, hover over it, move into the panel,
    and select the profile. Confirm the intended browser identity opens.
 
@@ -70,10 +74,12 @@ entries in DockSpark, give them recognizable labels, then select either one
 from Chrome's Dock icon. Changing a DockSpark label does not rename its real
 browser directory or move browser data.
 
-Safari and Firefox have their own profile workflows; do not apply Chromium
-directory names to them. Firefox discovery reads `profiles.ini` or Profile
-Group metadata. Use the official docs for browser-specific steps rather than
-inventing a profile creation feature in DockSpark.
+For Safari, arrange named entries in the same order as Safari's Profiles menu.
+Hidden named entries still occupy a shortcut position. The Private entry uses
+its own shortcut. For Firefox, bind each named entry to a profile from the
+detected list. Discovery reads Profile Group metadata or `profiles.ini`.
+Chromium also supports entering the real profile directory manually when
+discovery is unavailable.
 
 Choose the panel's **Private Browsing** or **Incognito** entry for a private
 window. These entries do not count as named profiles for Free limits. Do not
@@ -84,14 +90,18 @@ describe private browsing as anonymity or as another saved account profile.
 - Bottom, left, and right Dock layouts are supported, including auto-hide in
   typical setups. Unusual display arrangements or Dock utilities can affect
   positioning.
-- Move toward the panel from the browser icon; it dismisses when the pointer
-  leaves the icon and panel. Esc or Command-W dismisses it in 0.5.0.
+- Move from the browser icon toward the panel. In 0.5.1, hover response and
+  dismissal work more reliably across Dock positions. The panel dismisses
+  after the pointer leaves the icon and panel. Press Esc or Command-W to
+  close it immediately.
 - Closing the main window leaves DockSpark running for hover access. Use
   **Quit DockSpark** to stop it.
 - General settings can show or hide its menu bar and Dock icons. If both are
   hidden, reopen DockSpark from Applications or Launchpad.
 - Liquid Glass is available on macOS 26 or later and is off by default.
-- Anonymous usage analytics can be disabled in General settings in 0.5.0.
+- DockSpark follows the app language selected in macOS. Version 0.5.1 improves
+  contrast on light profile labels and corrects several translations.
+- Anonymous usage analytics can be disabled in General settings.
   Local profile configuration has no cloud sync; this is separate from browser
   sync and from app analytics, updates, and license verification.
 
@@ -107,3 +117,5 @@ These operations need internet access. A verified license can continue within
 its validity and offline grace periods; do not promise indefinite offline use
 or an undocumented grace duration. Use the official website or in-app links
 for current purchase and recovery information instead of hardcoding prices.
+For offline upgrades and verification errors, see
+[license troubleshooting](troubleshooting.md#license-or-limit-problems).

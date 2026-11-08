@@ -57,7 +57,7 @@ brew trust --cask dockspark/tap/dockspark && \
 
 ### Téléchargement manuel
 
-1. Ouvrez la [dernière publication](https://github.com/DockSpark/DockSpark/releases/latest).
+1. Ouvrez la [publication de DockSpark 0.5.1](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1).
 2. Téléchargez `DockSpark-0.5.1.dmg`. Ne téléchargez pas les archives de code source générées automatiquement par GitHub.
 3. Ouvrez l’image disque et glissez `DockSpark.app` dans le dossier Applications.
 4. Lancez DockSpark et accordez les autorisations macOS demandées.
@@ -85,7 +85,7 @@ Vous pouvez consulter ou révoquer ces autorisations à tout moment dans **Régl
 
 ## Skill pour les assistants IA
 
-Le [skill DockSpark](skills/dockspark/SKILL.md) aide les assistants IA à expliquer les fonctions de DockSpark et ses cas d’usage, à vous guider lors de l’installation et de l’utilisation quotidienne, à trouver la documentation officielle et à résoudre les problèmes courants. La version **0.5.0** du skill suit celle de l’application ; les guides fournis ont été vérifiés pour DockSpark 0.5.0. L’assistant répond dans votre langue.
+Le [skill DockSpark](skills/dockspark/SKILL.md) aide les assistants IA à expliquer les fonctions de DockSpark et ses cas d’usage, à vous guider lors de l’installation et de l’utilisation quotidienne, à trouver la documentation officielle et à résoudre les problèmes courants. La version **0.5.1** du skill suit celle de l’application ; les guides fournis ont été vérifiés pour DockSpark 0.5.1. L’assistant répond dans votre langue.
 
 Installez-le avec la [Skills CLI](https://github.com/vercel-labs/skills) (Node.js est requis ; consultez sa documentation pour les prérequis actuels) :
 
@@ -93,7 +93,7 @@ Installez-le avec la [Skills CLI](https://github.com/vercel-labs/skills) (Node.j
 npx skills add DockSpark/DockSpark --skill dockspark
 ```
 
-Choisissez votre assistant IA lorsque vous y êtes invité. Par défaut, l’installation s’applique au projet en cours ; ajoutez `-g` pour une installation globale. La commande GitHub nécessite que le skill ait été publié dans ce dépôt. Depuis une copie locale du dépôt, utilisez :
+Choisissez votre assistant IA lorsque vous y êtes invité. Par défaut, l’installation s’applique au projet en cours ; ajoutez `-g` pour une installation globale. Depuis une copie locale du dépôt, utilisez :
 
 ```sh
 npx skills add . --skill dockspark
@@ -113,11 +113,12 @@ Vous pouvez poser les mêmes questions en anglais ou dans une autre langue. Le s
 
 ![Fenêtre de gestion des profils de DockSpark](Assets/img_dockspark.jpg)
 
-> Cette capture présente l’interface de DockSpark. La version 0.5.0 permet de changer de profil depuis le Dock pour Safari, Firefox, Chrome et les autres navigateurs basés sur Chromium listés ci-dessus.
+> Cette capture présente l’interface de DockSpark. La version 0.5.1 permet de changer de profil depuis le Dock pour Safari, Firefox, Chrome et les autres navigateurs basés sur Chromium listés ci-dessus.
 
 ## Mises à jour
 
 DockSpark utilise Sparkle pour les mises à jour intégrées à l’application. Vous pouvez aussi télécharger les versions manuellement depuis la [page des publications](https://github.com/DockSpark/DockSpark/releases).
+Consultez les [notes de version de DockSpark 0.5.1](https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1) pour découvrir les changements.
 
 ## Intégrité des fichiers publiés
 

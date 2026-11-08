@@ -300,6 +300,8 @@ All notable changes to DockSpark are documented in this file.
 - Notarized by Apple with a stapled ticket
 - Supports macOS 14.0 or later on Apple silicon and Intel Macs
 
+[0.5.1]: https://github.com/DockSpark/DockSpark/releases/tag/v0.5.1
+[0.5.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.5.0
 [0.4.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.4.0
 [0.3.2]: https://github.com/DockSpark/DockSpark/releases/tag/v0.3.2
 [0.2.0]: https://github.com/DockSpark/DockSpark/releases/tag/v0.2.0
